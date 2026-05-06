@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#0f0f0f">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <title>Para Minha Princesa</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="C:\Users\JAPA SAFADO\Desktop\site-para-minha-princesa\static\poppins.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="heart">❤️</div>
+            <h1>Para minha princesa</h1>
+        </header>
+
+        <section class="counter-section">
+            <div id="timer">
+                <div class="time-box"><span id="days">00</span><p>Dias</p></div>
+                <div class="time-box"><span id="hours">00</span><p>Horas</p></div>
+                <div class="time-box"><span id="minutes">00</span><p>Min</p></div>
+                <div class="time-box"><span id="seconds">00</span><p>Seg</p></div>
+            </div>
+            <p class="sub-text">de muito amor e felicidade ✨</p>
+        </section>
+
+        <section class="music-player">
+            <div class="spotify-player">
+                <div class="player-header">
+                    <span class="player-label">🎵 Nossa Música</span>
+                </div>
+                <div class="player-content">
+                    <div class="album-art">
+                        <img src="static/imagem.jpg" alt="Capa da música" id="album-cover">
+                        <div class="album-overlay" id="album-overlay">
+                            <svg class="play-icon-overlay" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                    </div>
+                    <div class="track-info">
+                        <h3 class="track-title">Nossa Música</h3>
+                        <p class="track-artist">Para Minha Princesa</p>
+                    </div>
+                    <div class="player-controls">
+                        <button class="control-btn" id="prev-btn">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/></svg>
+                        </button>
+                        <button class="play-btn" id="play-btn">
+                            <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor" style="display:none"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                        </button>
+                        <button class="control-btn" id="next-btn">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/></svg>
+                        </button>
+                    </div>
+                    <div class="progress-container">
+                        <span class="time current" id="current-time">0:00</span>
+                        <div class="progress-bar-spotify" id="progress-bar">
+                            <div class="progress-fill-spotify" id="progress-fill"></div>
+                            <div class="progress-handle" id="progress-handle"></div>
+                        </div>
+                        <span class="time duration" id="duration">0:00</span>
+                    </div>
+                    <div class="volume-container">
+                        <button class="volume-btn" id="volume-btn">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                        </button>
+                        <div class="volume-bar" id="volume-bar">
+                            <div class="volume-fill" id="volume-fill"></div>
+                        </div>
+                    </div>
+                </div>
+                <audio id="bg-music" src="static/WhatsApp Audio 2026-04-24 at 14.34.10.mp4" preload="auto" loop></audio>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <h2>Nossa Historia</h2>
+            <div class="carousel-wrapper">
+                <div class="carousel">
+                    <div class="photo-card">
+                        <img src="static/foto1.jpg.jpeg" alt="Foto 1">
+                        <p class="caption">"primeira vez que saimos juntos" 17/09/2025</p>
+                    </div>
+                    <div class="photo-card">
+                        <img src="static/foto2.jpg.jpeg" alt="Foto 2">
+                        <p class="caption">"Nosso primeiro final de ano junto" 01/01/2026</p>
+                    </div>
+                    <div class="photo-card">
+                        <img src="static/foto3.jpg.jpeg" alt="Foto 3">
+                        <p class="caption">"aqui nois estava em paz" 10/03/2026</p>
+                    </div>
+                    <div class="photo-card">
+                        <img src="static/foto4.jpg.jpeg" alt="Foto 4">
+                        <p class="caption">"decidi deixa so uma foto dela pq amo aprecia ela"</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="videos-section">
+            <h2>Nossos Vídeos 💕</h2>
+            <div class="video-grid">
+                <div class="video-card">
+                    <p class="video-title">nois no parque vc estava morrendo de medo kkkk</p>
+                    <video class="local-video" muted autoplay loop playsinline>
+                        <source src="static/WhatsApp Video 2026-04-24 at 15.09.48.mp4" type="video/mp4">
+                        Seu navegador não suporta vídeo.
+                    </video>
+                </div>
+                <div class="video-card">
+                    <p class="video-title">nois na rede😆</p>
+                    <video class="local-video" muted autoplay loop playsinline>
+                        <source src="static/WhatsApp Video 2026-04-24 at 15.09.49.mp4" type="video/mp4">
+                        Seu navegador não suporta vídeo.
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Feito com <span id="footer-heart" class="footer-heart">❤️</span> por você</p>
+        </footer>
+    </div>
+
+    <!-- Modal do Bolo Mágico -->
+    <div id="cakeModal" class="cake-modal">
+        <div class="cake-modal-content">
+            <span id="closeCakeModal" class="close-cake-modal">&times;</span>
+            <div class="cake-container">
+                <div class="sparkles-container" id="sparkles"></div>
+                <div class="cake-wrapper">
+                    <div class="candle" id="candle">
+                        <div class="flame" id="flame"></div>
+                        <div class="candle-number">17</div>
+                    </div>
+                    <div class="cake-layer cake-layer-top" id="layer-top">
+                        <div class="frosting-drip drip-1"></div>
+                        <div class="frosting-drip drip-2"></div>
+                        <div class="frosting-drip drip-3"></div>
+                        <div class="sprinkles">
+                            <span></span><span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span><span></span>
+                        </div>
+                    </div>
+                    <div class="cake-layer cake-layer-middle" id="layer-middle">
+                        <div class="frosting-band"></div>
+                        <div class="sprinkles">
+                            <span></span><span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span><span></span>
+                        </div>
+                    </div>
+                    <div class="cake-layer cake-layer-bottom" id="layer-bottom">
+                        <div class="frosting-drip drip-4"></div>
+                        <div class="frosting-drip drip-5"></div>
+                        <div class="frosting-drip drip-6"></div>
+                        <div class="sprinkles">
+                            <span></span><span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span><span></span>
+                        </div>
+                    </div>
+                    <div class="cake-plate" id="cake-plate"></div>
+                </div>
+                <div class="cake-message" id="cake-message">Feliz Aniversário!</div>
+                <div class="love-letter" id="love-letter">
+                    <div class="letter-header">
+                        <span class="letter-icon">💌</span>
+                        <h3>Para Minha Princesa</h3>
+                    </div>
+                    <div class="letter-content">
+                        <p>Meu amor,</p>
+                        <p>Hoje é um dia especial, assim como você é especial para mim. Cada momento ao seu lado é uma lembrança que guardo com carinho no coração.</p>
+                        <p>Você é a luz que ilumina os meus dias e a razão do meu sorriso. Prometo estar sempre aqui, em todos os seus aniversários, celebrando a pessoa incrível que você é.</p>
+                        <p>Te amo mais do que as palavras podem expressar. Feliz aniversário, meu amor! 🎂💕</p>
+                        <p class="letter-sign">Com todo amor,<br>Gustavo</p>
+                    </div>
+                    <button class="letter-close-btn" id="letter-close-btn">Fechar carta</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <canvas id="heartRain"></canvas>
+    <script src="script.js"></script>
+    <!-- Botão flutuante para ativar som (aparece se autoplay for bloqueado) -->
+    <div id="sound-toast" style="position:fixed; bottom:20px; left:50%; transform:translateX(-50%) translateY(100px); background:rgba(214,51,108,0.95); color:white; padding:12px 24px; border-radius:30px; font-family:'Poppins',sans-serif; font-size:0.95rem; font-weight:600; z-index:9999; transition:transform 0.4s cubic-bezier(0.175,0.885,0.32,1.275); box-shadow:0 10px 30px rgba(214,51,108,0.4); pointer-events:none; opacity:0;">
+        🔊<som automatico></som>
+    </div>
+
+    <script>
+        (function() {
+            let soundEnabled = false;
+            const toast = document.getElementById('sound-toast');
+
+            function showToast() {
+                if (toast) { toast.style.transform = 'translateX(-50%) translateY(0)'; toast.style.opacity = '1'; toast.style.pointerEvents = 'auto'; }
+            }
+            function hideToast() {
+                if (toast) { toast.style.transform = 'translateX(-50%) translateY(100px)'; toast.style.opacity = '0'; toast.style.pointerEvents = 'none'; }
+            }
+
+            function enableSound() {
+                if (soundEnabled) return;
+                soundEnabled = true;
+                hideToast();
+
+                // Toca e desmuta o áudio principal
+                const bgMusic = document.getElementById('bg-music');
+                if (bgMusic) {
+                    bgMusic.muted = false;
+                    const playPromise = bgMusic.play();
+                    if (playPromise && playPromise.catch) playPromise.catch(()=>{});
+                }
+
+                // Desmuta apenas o áudio principal (vídeos ficam sem som)
+                document.querySelectorAll('video').forEach(v => {
+                    v.muted = true;
+                });
+
+                // Feedback visual rápido
+                const feedback = document.createElement('div');
+                feedback.textContent = '🔊 Som ativado!';
+                feedback.style.cssText = 'position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.8); color:#fff; padding:15px 30px; border-radius:12px; font-family:"Poppins",sans-serif; font-size:1.1rem; z-index:10000; pointer-events:none; animation:fadeOut 1.5s forwards;';
+                const style = document.createElement('style');
+                style.textContent = '@keyframes fadeOut{0%{opacity:1;transform:translate(-50%,-50%) scale(1);}100%{opacity:0;transform:translate(-50%,-60%) scale(0.9);}}';
+                document.head.appendChild(style);
+                document.body.appendChild(feedback);
+                setTimeout(() => feedback.remove(), 1500);
+            }
+
+            // Tenta tocar tudo no carregamento (provavelmente será bloqueado com som)
+            window.addEventListener('load', function() {
+                const bgMusic = document.getElementById('bg-music');
+                if (bgMusic) {
+                    bgMusic.muted = true;
+                    bgMusic.play().then(() => {
+                        // Se tocou muted, mostra toast para ativar som
+                        setTimeout(showToast, 800);
+                    }).catch(() => {
+                        // Se nem muted tocou, mostra toast imediatamente
+                        showToast();
+                    });
+                }
+
+                // Tenta tocar vídeos muted (deve funcionar)
+                document.querySelectorAll('video').forEach(v => {
+                    v.play().catch(()=>{});
+                });
+            });
+
+            // Ativa som na primeira interação
+            ['click', 'touchstart', 'scroll', 'keydown', 'pointerdown'].forEach(evt => {
+                window.addEventListener(evt, enableSound, { once: true, passive: true });
+            });
+
+            // Também ativa ao tocar no toast
+            if (toast) {
+                toast.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    enableSound();
+                });
+            }
+        })();
+    </script>
+</body>
+</html>
+
